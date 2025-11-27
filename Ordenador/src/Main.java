@@ -1,0 +1,44 @@
+void main() {
+    //creamos el procesador en blanco
+    Procesador procesador = new Procesador();
+    procesador.setGenerecaion("Quinta");
+    procesador.setNucleo("8");
+    procesador.setTipo("Intel");
+    procesador.setMemCache("2kb");
+    procesador.setVelocidad("3.6GHz");
+    System.out.println(" ");
+    System.out.println("Procesador ------------------------------------------------------------------");
+    System.out.println(procesador.getGenerecaion());
+    System.out.println(procesador.getNucleo());
+    System.out.println(procesador.getTipo());
+    System.out.println(procesador.getMemCache());
+    System.out.println(procesador.getVelocidad());
+    System.out.println(" ");
+    Memoria memoria = new Memoria();
+    memoria.setTipo("DDR5");
+    memoria.setVelocidad("4GHz");
+    memoria.setCapacidad("16 GB");
+    System.out.println(" ");
+    System.out.println("Memoria -------------------------------------------------");
+    System.out.println(memoria.getTipo());
+    System.out.println(memoria.getVelocidad());
+    System.out.println(memoria.getCapacidad());
+    System.out.println(" ");
+    PlacaBase placaBase = new PlacaBase();
+    placaBase.setPCI("2x 16");
+    placaBase.setSocket("LGA");
+    System.out.println(" ");
+    System.out.println("Placa Base ---------------------------------------------------------");
+    System.out.println(placaBase.getPCI());
+    System.out.println(placaBase.getSocket());
+    System.out.println(" ");
+    Torre torre = new Torre();
+    torre.setDimensiones("25x50x10");
+    torre.setTipo("ATX");
+    torre.setPuertosUSB("3X3.0");
+    System.out.println(" ");
+    System.out.println("Torre ------------------------------------------------------");
+    System.out.println(torre.getDimensiones());
+    System.out.println(torre.getTipo());
+    System.out.println(torre.getPuertosUSB());
+}
